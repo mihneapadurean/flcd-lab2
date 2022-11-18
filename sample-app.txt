@@ -1,0 +1,31 @@
+start 
+{
+
+    int $n;
+    read(n);
+
+    int i;
+    i = 2;
+
+    int ok;
+    ok = 1;
+
+    while(i < n) 
+    {
+        if(n % i == 0)
+        {
+            ok = 0;
+        }
+        i = i + 1;
+    }
+
+    if(ok == 0)
+    {
+        write("Not prime");
+    }
+    else 
+    {
+        write("Prime");
+    }
+
+} stop
